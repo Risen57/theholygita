@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shlok</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='shloks.css') }}" />
+</head>
+
+<body class="bg" style="background-image: url(https://source.unsplash.com/UWQP2mh5YJI/1366x768)">
+    <div class="fl">
+        <div class="cont" id="text">{{shloka[0]}}</div>
+        <div class="cont" id="transliteration">{{shloka[1]}}</div>
+        <div class="cont" id="transl">{{shloka[2]}}</div>
+        <div class="btn">
+            <a class="ln" href="/">Go Back</a>
+        </div>
+    </div>
+</body>
+</html>

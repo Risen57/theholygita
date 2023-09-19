@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheHolyGita</title>
+    <meta name="description" content="A minimal site to read the holy Bhagavad Gita at your fingertips.">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+
+<body class="bg" style="background-image: url(https://source.unsplash.com/UWQP2mh5YJI/1366x768)">
+    
+    <div class="container">
+        <h2 class="gi">Search for a Shloka</h2>
+        
+        <form action="/shlok" method="POST">
+            <div class="selectors-div">
+                
+                <div class="selector">
+                    <label for="ch" id="selector-ch"></label>
+                    <input name="ch" type="number" class="selector-input" placeholder="Enter Ch Num">
+                </div>     
+
+                <div class="selector">
+                    <label for="shlok" id="selector-shlok"></label>
+                    <input name="shlok" type="number" class="selector-input" placeholder="Enter Shlok Num">
+                </div>
+
+                <div>
+                    <input type="submit" class="submit-button" value="Search">
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
